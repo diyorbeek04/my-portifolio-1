@@ -1,0 +1,156 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+@font-face {
+    font-family: "montserrat";
+    src: url(./Montserrat/static/Montserrat-ExtraBold.ttf);
+}
+ul{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+
+/* ***** HEADER ***** */
+#header{
+    width: 100%;
+    background-color: #D9D9D9;
+    position: fixed;
+}
+
+/* ***** NAVBAR ***** */
+#header #navbar{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+#navbar .logo{
+    width: 50%;
+}
+#navbar .logo h1{
+    width: 50%;
+    font-size: 32px;
+    font-family: "montserrat";
+    color: #333;
+    padding: 20px;
+}
+#navbar .nav{
+    width: 50%;
+}
+#navbar .nav ul{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+#navbar .nav ul li a{
+    font-size: 22px;
+    text-decoration: none;
+    color: #555;
+    padding: 36px;
+
+}
+#navbar .nav ul li .current:hover{
+    background-color: #888;
+    color: rgb(249, 252, 170);
+}
+#navbar .nav ul li .current:active{
+    background-color: #444;
+    color: rgb(249, 253, 116);
+}
+
+/* ***** ABOUT US ***** */
+#about-info{
+    width: 100%;
+    background-image: url(./img/bg-image.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding-top: 60px;
+}
+#about-info #about{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+#about .about-text{
+    width: 50%;
+}
+#about .about-text h1{
+    font-size: 42px;
+    color: #333;
+}
+#about .about-img{
+    width: 50%;
+    padding: 35px;
+}
+#about .about-img img{
+   width: 70%;
+   height: auto;
+    border-radius: 50%;
+}
+
+/* ***** SKILLS ***** */
+#skills-info{
+    width: 100%;
+    background-color: #777;
+    padding: 40px;
+}
+#skills-info h1{
+    font-size: 54px;
+    color: #333;
+    text-align: center;
+    font-family: "montserrat";
+}
+.corusel-me{
+    margin: 20px auto;
+}
+
+/* ***** Projects ***** */
+#project-info{
+    width: 100%;
+    background-color: #666;
+}
+#project-info .project{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 35px;
+}
+#project-info .project .box{
+    width: 30%;
+    background-color: #D9D9D9;
+}
+#project-info .project .box .box-text{
+    width: 100%;
+}
+#project-info .project .box .box-text h1{
+    font-size: 28px;
+    color: #333;
+    margin: 10px auto;
+    text-align: center;
+}
+#project-info .project .box .box-img{
+    width: 100%;
+}
+#project-info .project .box .box-img img{
+    width: 100%;
+}
+
+#project-info .project .box .button{
+    width: 100%;
+}
+#project-info .project .box .button .box-btn{
+    padding: 5px 35px;
+    background-color: rgb(113, 237, 237);
+    border: none;
+    margin: 5px;
+}
